@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    unicode-bidi: isolate;
+    
+}
+nav:first-child {
+    margin-right: auto;
+}
+nav:nth-child(2) {
+    margin-left: auto;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav a:hover {
+    color: #222;
+}
+.navOpen {
+    display: none;
+}
+.navOpen:hover {
+    color: #222;
+}
+.nav-l {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.sideBar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(100, 123, 155);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    width: 0px;
+    
+    
+}
+.sideBar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 8px 8px 8px 30px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav img {
+    display: block;
+    position: relative;
+    border-radius: 100px;
+    width: 40px;
+}
+
+
+header {
+    margin: auto;
+    padding: 10px 30px;
+    background-color: rgb(100, 123, 155);
+    background-size: 100%;
+    background-position: 0% 35%;
+    background-repeat: repeat-x;
+    position: sticky;
+    display: block;
+    top: 0;
+    font-size: 1rem;
+    color: white;
+    z-index: 10;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.countainer {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    font-size: 0.9rem;
+    min-height: 100vh;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    background-color: rgb(92, 122, 167);
+    background-image: url(ara11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: unset;
+    line-height: 1.4;
+}
+.wrapper {
+    position: absolute;
+    top: 0.1px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.sub{
+    border-bottom: 2px solid black;
+}
+.gambar {
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    margin: 0px auto 10px auto;
+}
+.spoiler {
+    border: 2px solid black;
+}
+aside {
+    background-color: rgb(67, 92, 126);
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-size: 1rem;
+
+    
+}
+table {
+    padding: 10px 20px;
+}
+.gambar-aside {
+    width: 60px;
+    overflow-clip-margin: content-box;
+    border-radius: 15px;
+
+    
+}
+
+.td-awal {
+    padding-right: 20px;
+}
+.warna-td {
+    color: black;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(100, 123, 155);
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-gambar {
+    width: 80px;
+}
+.bio  {
+    width: 40px;
+    padding-bottom: 20px;
+}
+@media(max-width: 650px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .hideOnDesktop{
+        display: flex;
+    }
+    
+}
+@media(min-width:650px) {
+    .gambar{
+        width: 70%;
+    }
+    body {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 900px) {
+    body {
+    font-size: 1.1rem;
+    }
+    .gambar {
+        width: 400px;
+    }
+    aside {
+        min-width: 25%;
+        position: sticky;
+    }
+    main {
+        padding: 20px 70px;
+        flex-direction: row;
+        gap: 50px;
+    }
+    aside {
+        margin-top: 169px;
+    }
+}
